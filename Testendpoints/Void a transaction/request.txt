@@ -1,0 +1,2 @@
+curl --location --request DELETE 'https://api-uat.kushkipagos.com/v1/charges/661596843269335647' \
+--header 'Private-Merchant-Id: ef672234e4894e0884f659af00be8331'
