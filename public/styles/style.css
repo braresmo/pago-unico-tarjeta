@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f4f7;
+    min-height: 45vw;
+    
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+#content-payment{
+    background : white;
+}
+.form-payment {
+    width: 100%;
+    min-width: 350px;
+    max-width: 400px;
+    padding: 15px;
+    margin: auto;
+    opacity: 1;
+  }
+  #content-payment_img{
+      max-width: 30%;
+  }
+  #content-payment_success{
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      height: 100%;
+      background: white;
+  }
+  #content-payment_success pre{
+    background: #f1f4f7;
+    /* border-radius: 0.5rem; */
+    font-size: 0.75rem;
+    text-align: left;
+    height: 200px;
+    overflow: auto;
+      height: 60%;
+  }
+
+  
