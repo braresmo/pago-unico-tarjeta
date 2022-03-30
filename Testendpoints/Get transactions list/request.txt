@@ -1,0 +1,3 @@
+curl --location --request GET 'https://api-uat.kushkipagos.com/analytics/v1/transactions-list/?from=2022-03-29T13:39:00.836&to=2022-03-30T23:00:00.836' \
+--header 'Private-Merchant-Id: ef672234e4894e0884f659af00be8331' \
+--header 'Content-Type: application/json'
