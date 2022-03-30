@@ -42,12 +42,6 @@ function test(element){
     }else console.log("El id del elemento button no coincide con los criterios")
 }
 
-function enviarPeticione(element){
-    document.querySelector("#content-payment-infoToken").innerHTML = "Cargando...";
-    element.preventDefault();
-    tagSuccess.style.display = 'flex';
-    main.style.opacity = '0';
-}
 async function enviarPeticion(element){
     element.preventDefault();
     document.querySelector("#content-payment-infoToken").innerHTML = "Cargando...";
@@ -96,7 +90,6 @@ async function enviarPeticion(element){
             })
             .catch(res => console.log(`algo salio mal ${res}`))
         } else {
-            // respuestastring = response ;
           console.error('Error: ',response.error, 'Code: ', response.code, 'Message: ',response.message);
           console.log("desde el error");
         }
