@@ -1,7 +1,7 @@
 const request = require('request');
 const express = require('express');
 require('dotenv').config();
-const port = process.env.PORT;
+const PORT = process.env.PORT;
 app = express();
 app.use(express.static("public"));
 app.use(express.json());
@@ -104,7 +104,9 @@ app.post('/peticion', async function (req, res) {
 
 // console.log('termino')
 
-app.listen(port);
+app.listen(PORT,() =>{
+  console.log(`Ejecutando desde el puerto : ${PORT}`)
+});
 
 
 
